@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | My Site 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('home.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+  .about {
+    padding: 3rem 1rem;
+    background: #f0f0f0; /* nền xám nhạt toàn bộ khung */
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px; /* giới hạn khung nội dung */
+    background: #e0e0e0; /* khung nền xám nhẹ bên trong */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .about-img {
+    flex: 1 1 50%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 0 auto;
+    order: 0;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  .about-content {
+    flex: 1 1 50%;
+    padding: 2.5rem;
+    color: black;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  .about-content a {
+    display: inline-block;
+    margin-top: 1rem;
+    background: black;
+    color: white;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 768px) {
+    .about-wrapper {
+      flex-direction: column;
+    }
+
+    .about-img,
+    .about-content {
+      flex: 1 1 100%;
+      order: unset;
+    }
+
+    .about-content {
+      padding: 2rem;
+    }
+  }
+
+
+    .gallery {
+      text-align: center;
+      background: #f9f9f9;
+      padding: 2rem;
+    }
+
+    .gallery h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      justify-items: center;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .contact {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #555;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>BUMISHA DO</h1>
+      <p>Freelance Model</p>
+    </div>
+  </section>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-wrapper">
+      <div class="about-img">
+        <img src="about.jpg" alt="About Image">
+      </div>
+      <div class="about-content">
+        <h2>About Me!</h2>
+        <p>Tôi là Đỗ Hà Anh. Hiện tại ở độ tuổi 21, tôi là Founder của brand thời trang PISHA SOIE VIETNAM kiêm Freelance Model.</p>
+        <p>Với phong cách tự tin, quyến rũ, phóng khoáng và ý chí quyết đoán, mãnh liệt, tôi đã chinh phục được gần như mọi mục tiêu tôi từng đặt ra ở độ tuổi 18.</p>
+        <a href="#resume">See Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="gallery1.jpg" alt="Gallery Image 1" />
+      <img src="gallery2.jpg" alt="Gallery Image 2" />
+      <img src="gallery3.jpg" alt="Gallery Image 3" />
+      <img src="gallery4.jpg" alt="Gallery Image 4" />
+      <img src="gallery5.jpg" alt="Gallery Image 5" />
+      <img src="gallery6.jpg" alt="Gallery Image 6" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <address>
+      Vinaconex 12, 57 Vũ Trọng Phụng, Thanh Xuân, Hà Nội<br />
+      Tel: 0964-05-0707<br />
+      Email: <a href="mailto:bumisha718@gmail.com">bumisha718@gmail.com</a>
+    </address>
+    <form class="contact-form">
+      <input type="text" name="first_name" placeholder="First Name *" required />
+      <input type="text" name="last_name" placeholder="Last Name *" required />
+      <input type="email" name="email" placeholder="Email *" required />
+      <input type="text" name="subject" placeholder="Subject" />
+      <textarea name="message" rows="5" placeholder="Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2035 by Actor & Model. Powered and secured by Wix</p>
+  </footer>
+</body>
+</html>
